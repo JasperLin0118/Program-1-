@@ -1,7 +1,13 @@
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    int a=5;
-    char *p=a;
-    printf("%c", *p);
+#include <string.h>
+int main()
+{
+    while(getchar()!=EOF)
+    {
+        char num=getchar();
+        int count=1;
+        while(num!='\n')
+            count++;
+        printf("%d", count);
+    }
 }
